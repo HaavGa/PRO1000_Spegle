@@ -4,14 +4,14 @@ nav img {
 }
 
 #hero {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 5.625rem);
   background-image: url("/img/test.jfif");
   background-position: center;
   background-size: cover;
 }
 
 #oftevatn-hero {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 5.625rem);
   background-image: url("/img/cabin.jfif");
   background-position: center;
   background-size: cover;
@@ -44,9 +44,15 @@ nav {
 }
 
 main .card {
-  max-width: 800px;
+  max-width: 50rem;
 }
 
 .card .btn-outline-primary {
   width: 5.5rem;
+}
+
+.active {
+  border: 1px solid #4b88a0;
+  border-radius: 8px;
+  // box-shadow: 1px 1px 2px #4b88a0;
 }
