@@ -46,3 +46,7 @@ nav {
 main .card {
   max-width: 800px;
 }
+
+.card .btn-outline-primary {
+  width: 5.5rem;
+}
