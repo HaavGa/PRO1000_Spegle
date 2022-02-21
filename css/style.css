@@ -30,3 +30,7 @@ nav {
   position: absolute;
   z-index: 1;
 }
+
+main .card {
+  max-width: 800px;
+}
