@@ -10,7 +10,16 @@ nav img {
   background-size: cover;
 }
 
-#hero:before {
+#oftevatn-hero {
+  height: calc(100vh - 90px);
+  background-image: url("/img/cabin.jfif");
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#hero:before,
+#oftevatn-hero:before {
   content: "";
   position: absolute;
   top: 0;
@@ -22,7 +31,10 @@ nav img {
 
 #hero h2,
 #hero p,
-#hero a {
+#hero a,
+#oftevatn-hero h2,
+#oftevatn-hero p,
+#oftevatn-hero a {
   position: relative;
 }
 
