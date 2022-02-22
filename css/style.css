@@ -1,5 +1,5 @@
 body {
-  font-family: font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav img {
@@ -71,9 +71,4 @@ footer i:hover {
 
 .mirrored-destination {
   flex-direction: row-reverse;
-}
-
-.navbar-brand span {
-  position: relative;
-  top: 5px;
 }
