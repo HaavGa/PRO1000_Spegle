@@ -64,3 +64,7 @@ footer i {
 footer i:hover {
   color: #4b88a0;
 }
+
+.mirrored-destination {
+  flex-direction: row-reverse;
+}
