@@ -9,7 +9,7 @@ nav img {
 
 #hero {
   height: calc(100vh - 5.625rem);
-  background-image: url("/img/test.jfif");
+  background-image: url("/img/test.gif");
   background-position: center;
   background-size: cover;
 }
