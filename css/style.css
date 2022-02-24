@@ -87,3 +87,13 @@ footer i:hover {
 .mirrored-destination {
   flex-direction: row-reverse;
 }
+
+#map-container-google-1 {
+  width: 50rem;
+  height: 30rem;
+}
+
+#map-container-google-1 iframe {
+  height: 100%;
+  width: 100%;
+}
