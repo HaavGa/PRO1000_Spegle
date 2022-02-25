@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 nav img {
@@ -9,7 +10,7 @@ nav img {
 
 #hero {
   height: calc(100vh - 5.625rem);
-  width: 98.9vw;
+  width: 100%;
   position: relative;
 }
 
