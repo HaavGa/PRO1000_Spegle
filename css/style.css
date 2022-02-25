@@ -90,6 +90,10 @@ footer i:hover {
   width: 100%;
 }
 
+.card-body a:hover {
+  color: white;
+}
+
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
