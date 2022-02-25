@@ -7,14 +7,6 @@ nav img {
   width: 50px;
 }
 
-// #hero {
-//   height: calc(100vh - 5.625rem);
-//   background-image: url("/img/test.jfif");
-//   // background-image: url("/img/test.gif");
-//   background-position: center;
-//   background-size: cover;
-// }
-
 #hero {
   height: calc(100vh - 5.625rem);
   width: 98.9vw;
@@ -96,4 +88,18 @@ footer i:hover {
 #map-container-google-1 iframe {
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #map-container-google-1 {
+    width: 45rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .adresse {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
