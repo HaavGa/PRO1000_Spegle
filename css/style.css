@@ -109,3 +109,11 @@ footer i:hover {
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-item .active,
+  .nav-item,
+  .dropdown {
+    padding-left: 0.7rem;
+  }
+}
