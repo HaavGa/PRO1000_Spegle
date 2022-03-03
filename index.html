@@ -33,6 +33,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="js/main.js" defer></script>
     <title>Spegle</title>
   </head>
   <body>
@@ -123,13 +124,14 @@
     </nav>
     <main>
       <div id="hero">
-        <video autoplay muted loop>
+        <img id="img" src="/img/test.jfif" alt="" />
+        <video id="video" autoplay muted loop>
           <source
+            id="video"
             src="/img/test-video.mp4"
             type="video/mp4"
           />
         </video>
-        <img src="/img/test.jfif" alt="" />
         <div class="container py-5 mb-4">
           <div class="p-5 mb-4 lc-block">
             <div class="lc-block mt-5">
@@ -154,8 +156,8 @@
             </div>
             <div>
               <a
-                class="btn btn-primary btn-lg mt-2 text-white"
                 href="/oftevatn.html#hytter"
+                class="btn btn-primary btn-lg mt-2 text-white"
                 >Book nå</a
               >
             </div>

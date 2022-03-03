@@ -109,15 +109,3 @@ footer i:hover {
     margin-bottom: 1rem;
   }
 }
-
-@media (max-width: 768px) {
-  #hero video {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  #hero img {
-    display: none;
-  }
-}
