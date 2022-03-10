@@ -8,6 +8,19 @@ nav img {
   width: 50px;
 }
 
+.flag {
+  height: 20px;
+  width: 25px;
+}
+
+.flag-dropdown {
+  height: 15px;
+  width: 20px;
+}
+
+.dropdown i {
+  color: #4b88a0;
+}
 #hero {
   height: calc(100vh - 5.625rem);
   width: 100%;
