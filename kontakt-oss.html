@@ -46,14 +46,14 @@
         <div class="collapse navbar-collapse nav-pills" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/index.html" class="nav-link">Hjem</a>
+              <a href="/index.html" class="nav-link" id="navHome">Hjem</a>
             </li>
             <li class="dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
                 role="button"
-                id="dropdownMenuLink"
+                id="navDestinations"
                 data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -61,8 +61,11 @@
                 Destinasjoner
               </a>
 
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="/destinasjoner.html"
+              <div class="dropdown-menu" aria-labelledby="navDestinations">
+                <a
+                  class="dropdown-item"
+                  href="/destinasjoner.html"
+                  id="navAllDestinations"
                   >Alle destinasjoner</a
                 >
                 <a class="dropdown-item" href="/oftevatn.html">Oftevatn</a>
@@ -72,22 +75,85 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="/om-oss.html" class="nav-link">Om oss</a>
+              <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
             </li>
             <li class="nav-item">
-              <a href="/kontakt-oss.html" class="nav-link active text-white"
+              <a
+                href="/kontakt-oss.html"
+                class="nav-link active text-white me-3"
+                id="navContact"
                 >Kontakt oss</a
               >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="language-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-translate"></i>
+                Language
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-white"
+                aria-labelledby="language-toggle"
+              >
+                <li class="d-flex align-items-center">
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="changeLanguage('no')"
+                  >
+                    <img
+                      class="flag-dropdown me-1"
+                      src="/img/flags/no.png"
+                      alt="Norwegian flag"
+                    />
+                    Norsk</a
+                  >
+                </li>
+                <li class="d-flex align-items-center">
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onclick="changeLanguage('en')"
+                  >
+                    <img
+                      class="flag-dropdown me-1"
+                      src="/img/flags/en.png"
+                      alt="English flag"
+                    />
+                    English</a
+                  >
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <main>
+      <nav
+        class="navbar bg-light px-3 d-flex justify-content-center sticky-top"
+      >
+        <ul class="nav navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">Ofte stile spørsmål</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt oss</a>
+          </li>
+        </ul>
+      </nav>
       <!-- Ofte stilte spørsmål -->
       <section
         class="feature d-flex flex-column align-items-center pt-3 mb-lg-5 border-top"
+        id="faq"
       >
+        <br /><br />
         <div class="feature-icon mb-2">
           <i class="bi bi-question-circle"></i>
         </div>
@@ -110,7 +176,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
                 >
-                  Accordion Item #1
+                  Spørsmål 1
                 </button>
               </h2>
               <div
@@ -137,7 +203,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  Accordion Item #2
+                  Spørsmål 2
                 </button>
               </h2>
               <div
@@ -165,7 +231,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  Accordion Item #3
+                  Spørsmål 3
                 </button>
               </h2>
               <div
@@ -195,7 +261,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  Accordion Item #4
+                  Spørsmål 4
                 </button>
               </h2>
               <div
@@ -225,7 +291,7 @@
                   aria-expanded="false"
                   aria-controls="flush-collapseFive"
                 >
-                  Accordion Item #5
+                  Spørsmål 5
                 </button>
               </h2>
               <div
@@ -245,12 +311,165 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  Spørsmål 6
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSix"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's
+                  accordion body. Nothing more exciting happening here in terms
+                  of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this
+                  would look in a real-world application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeven"
+                >
+                  Spørsmål 7
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's
+                  accordion body. Nothing more exciting happening here in terms
+                  of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this
+                  would look in a real-world application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEight"
+                >
+                  Spørsmål 8
+                </button>
+              </h2>
+              <div
+                id="flush-collapseEight"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingEight"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's
+                  accordion body. Nothing more exciting happening here in terms
+                  of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this
+                  would look in a real-world application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseNine"
+                >
+                  Spørsmål 9
+                </button>
+              </h2>
+              <div
+                id="flush-collapseNine"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingNine"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's
+                  accordion body. Nothing more exciting happening here in terms
+                  of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this
+                  would look in a real-world application.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTen">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTen"
+                >
+                  Spørsmål 10
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTen"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTen"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's
+                  accordion body. Nothing more exciting happening here in terms
+                  of content, but just filling up the space to make it look, at
+                  least at first glance, a bit more representative of how this
+                  would look in a real-world application.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="bg-primary text-white text-center text-sm-start">
-        <!-- Symboler -->
-        <div class="container border-top" id="featured-3">
+      <section
+        class="bg-primary text-white text-center text-sm-start"
+        id="contact"
+      >
+        <!-- Kontaktskjema -->
+        <div class="container pt-5" id="featured-3">
           <h2 class="mt-5 text-center">Kontakt oss</h2>
           <div class="row g-4 pb-5 pt-3 row-cols-1 row-cols-md-2">
             <div class="feature col d-flex flex-column align-items-center">
@@ -258,7 +477,10 @@
                 <i class="bi bi-telephone"></i>
               </div>
               <h3>Telefon</h3>
-              <p>Telefonnummer: 123 45 678</p>
+              <p>
+                Telefonnummer:
+                <a href="tel:12345678" class="text-white">123 45 678</a>
+              </p>
               <p class="text-center">
                 Åpningstider: Mandag - Fredag <br />
                 (10:00 - 17:00)
@@ -279,7 +501,6 @@
           </div>
         </div>
       </section>
-      <!-- Kontaktskjema -->
       <section
         class="bg-white text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
       ></section>

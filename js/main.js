@@ -25,7 +25,7 @@ function changeLanguage(lang) {
 }
 
 // Define the language reload anchors
-var language = {
+const language = {
   en: {
     // Navigation
     navHome: 'Home',
@@ -34,7 +34,7 @@ var language = {
     navAbout: 'About',
     navContact: 'Contact us',
     // Index
-    indexHeader: 'Doesnt upon fish there above',
+    indexHeader: 'This is some English text',
     indexText:
       'Prevailed sincerity behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is.',
     indexBtn: 'Book now',
