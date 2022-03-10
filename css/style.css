@@ -23,12 +23,13 @@ nav img {
 }
 
 .scrollspy {
-  z-index: 10;
+  z-index: 0;
 }
 
 #faq,
 #contact {
-  z-index: 5;
+  position: relative;
+  z-index: -10;
 }
 
 #hero {
