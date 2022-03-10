@@ -21,6 +21,16 @@ nav img {
 .dropdown i {
   color: #4b88a0;
 }
+
+.scrollspy {
+  z-index: 10;
+}
+
+#faq,
+#contact {
+  z-index: 5;
+}
+
 #hero {
   height: calc(100vh - 5.625rem);
   width: 100%;
@@ -133,5 +143,9 @@ footer i:hover {
   .nav-item,
   .dropdown {
     padding-left: 0.7rem;
+  }
+
+  #faq {
+    margin-bottom: 3rem;
   }
 }
