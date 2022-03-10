@@ -4,7 +4,7 @@ const video = document.getElementById('video');
 const img = document.getElementById('img');
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 myFunction(mediaQuery);
-mediaQuery.addListener(myFunction);
+mediaQuery.addEventListener('document', myFunction);
 
 function myFunction(mediaQuery) {
   if (mediaQuery.matches) {
@@ -53,7 +53,6 @@ if (window.location.hash == '#no') {
   navAllDestinations.textContent = language.no.navAllDestinations;
   navAbout.textContent = language.no.navAbout;
   navContact.textContent = language.no.navContact;
-
   // Index
   indexHeader.textContent = language.no.indexHeader;
   indexText.textContent = language.no.indexText;
