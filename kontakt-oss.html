@@ -24,9 +24,9 @@
     ></script>
     <title>Spegle</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#scroller2" data-offset="20">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md py-3 bg-white navbar-light">
+    <nav class="navbar navbar-expand-md py-3 bg-white navbar-light on-top">
       <div class="container">
         <a href="/index.html" class="navbar-brand">
           <img src="/img/newlogo.png" alt="Spegle Logo" /><span class="ps-3"
@@ -138,6 +138,7 @@
     <main>
       <nav
         class="navbar bg-light px-3 d-flex justify-content-center sticky-top scrollspy"
+        id="scroller2"
       >
         <ul class="nav navbar">
           <li class="nav-item">
@@ -500,9 +501,6 @@
           </div>
         </div>
       </section>
-      <section
-        class="bg-white text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
-      ></section>
     </main>
     <div class="container">
       <footer
