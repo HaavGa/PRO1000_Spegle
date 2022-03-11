@@ -86,10 +86,20 @@ main .card {
   width: 5.5rem;
 }
 
+// .active {
+//   border: 1px solid #4b88a0;
+//   border-radius: 5px;
+//   box-shadow: 1px 1px 2px #4b88a0;
+// }
+
 .active {
-  border: 1px solid #4b88a0;
-  border-radius: 5px;
-  box-shadow: 1px 1px 2px #4b88a0;
+  background: #4b88a0;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.active:hover {
+  color: #fff;
 }
 
 footer i {
