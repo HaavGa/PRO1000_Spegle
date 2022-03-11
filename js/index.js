@@ -1,3 +1,20 @@
+// Disable video on mobile screens
+
+const video = document.getElementById('video');
+const img = document.getElementById('img');
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+myFunction(mediaQuery);
+mediaQuery.addEventListener('document', myFunction);
+
+function myFunction(mediaQuery) {
+  if (mediaQuery.matches) {
+    // If media query matches
+    video.remove();
+  } else {
+    img.remove();
+  }
+}
+
 // Change language of website
 
 // Create a function to change the hash value of the page
@@ -7,7 +24,7 @@ function changeLanguage(lang) {
 }
 
 // Define the language reload anchors
-let language = {
+const language = {
   en: {
     // Navigation
     navHome: 'Home',
@@ -15,6 +32,11 @@ let language = {
     navAllDestinations: 'All destinations',
     navAbout: 'About',
     navContact: 'Contact us',
+    // Index
+    indexHeader: 'This is some English text',
+    indexText:
+      'Prevailed sincerity behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is.',
+    indexBtn: 'Book now',
     // Destinations
     destHeader: 'Destinations',
     destOfteTxt:
