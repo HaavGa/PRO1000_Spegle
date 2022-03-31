@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -47,7 +47,7 @@ nav img {
 
 #oftevatn-hero {
   height: calc(100vh - 10rem);
-  background-image: url('/img/cabin.jfif');
+  background-image: url("/img/cabin.jfif");
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -55,7 +55,7 @@ nav img {
 
 #hero:before,
 #oftevatn-hero:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -132,6 +132,26 @@ footer i:hover {
   font-size: 60px;
 }
 
+#om-oss p {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bilde {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
@@ -156,5 +176,13 @@ footer i:hover {
 
   #faq {
     margin-bottom: 3rem;
+  }
+
+  .test {
+    margin-bottom: 2rem;
+  }
+
+  .bilde {
+    max-width: 30rem;
   }
 }
