@@ -196,6 +196,12 @@ footer i:hover {
   bottom: 4rem;
 }
 
+#hyllTitle {
+  font-size: 4rem;
+}
+#hyllText {
+  font-size: 1rem;
+}
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
@@ -205,6 +211,7 @@ footer i:hover {
   #hyllTitle {
     font-size: 3rem;
   }
+
   #hyllText {
     font-size: 1.02rem;
   }
