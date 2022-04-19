@@ -1,10 +1,10 @@
 // Disable video on mobile screens
 
-const video = document.getElementById('video');
-const img = document.getElementById('img');
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+const video = document.getElementById("video");
+const img = document.getElementById("img");
+const mediaQuery = window.matchMedia("(max-width: 768px)");
 myFunction(mediaQuery);
-mediaQuery.addEventListener('document', myFunction);
+mediaQuery.addEventListener("document", myFunction);
 
 function myFunction(mediaQuery) {
   if (mediaQuery.matches) {
@@ -27,25 +27,15 @@ function changeLanguage(lang) {
 const language = {
   en: {
     // Navigation
-    navHome: 'Home',
-    navDestinations: 'Destinations',
-    navAllDestinations: 'All destinations',
-    navAbout: 'About',
-    navContact: 'Contact us',
+    navHome: "Home",
+    navAbout: "About",
+    navContact: "Contact us",
     // Index
-    indexHeader: 'This is some English text',
     indexText:
-      'Prevailed sincerity behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is.',
-    indexBtn: 'Book now',
-    // Destinations
-    destHeader: 'Destinations',
-    destOfteTxt:
-      'Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity.',
-    destOfteTxtSm: 'County, municipality',
-    dest2: 'Destination 2',
-    dest2Txt:
-      'Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. Tore has sons put upon wife use bred seen. Its dissimilar invitation ten has discretion unreserved. Had you him humoured jointure ask expenses learning. Blush on in jokes sense do do. Brother hundred he assured reached on up no.',
-    dest2TxtSm: 'County, municipality',
+      "Live close to nature and wildlife in Speglehyttene. Surrounded by mountains, forests and lakes, you can find peace and rest. Take a break from everyday life, and create good memories in these very special cabins with glass walls that reflect the surrounding landscape. Good bed, bathroom and kitchenette. Reserved use of sauna.",
+    indexBtn: "Book now",
+    // Hyllandsfoss
+    hyllTitle: "Welcome to Hyllandsfoss",
   },
 };
 
@@ -54,33 +44,12 @@ if (window.location.hash) {
   // Set the content of the webpage
   // depending on the hash value
 }
-// if (window.location.hash == '#no') {
-//   // Navigation
-//   navHome.textContent = language.no.navHome;
-//   navDestinations.textContent = language.no.navDestinations;
-//   navAllDestinations.textContent = language.no.navAllDestinations;
-//   navAbout.textContent = language.no.navAbout;
-//   navContact.textContent = language.no.navContact;
-//   // Index
-//   indexHeader.textContent = language.no.indexHeader;
-//   indexText.textContent = language.no.indexText;
-//   indexBtn.textContent = language.no.indexBtn;
-if (window.location.hash == '#en') {
+if (window.location.hash == "#en") {
   // Navigation
   navHome.textContent = language.en.navHome;
-  navDestinations.textContent = language.en.navDestinations;
-  navAllDestinations.textContent = language.en.navAllDestinations;
   navAbout.textContent = language.en.navAbout;
   navContact.textContent = language.en.navContact;
   // Index
-  indexHeader.textContent = language.en.indexHeader;
   indexText.textContent = language.en.indexText;
   indexBtn.textContent = language.en.indexBtn;
-  // Destinations
-  destHeader.textContent = language.en.destHeader;
-  destOfteTxt.textContent = language.en.destOfteTxt;
-  destOfteTxtSm.textContent = language.en.destOfteTxtSm;
-  dest2.textContent = language.en.dest2;
-  dest2Txt.textContent = language.en.dest2Txt;
-  dest2TxtSm.textContent = language.en.dest2TxtSm;
 }

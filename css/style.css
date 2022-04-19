@@ -159,7 +159,7 @@ footer i:hover {
 }
 
 #icon-grid {
-  margin-top: 7rem;
+  margin-top: 1rem;
 }
 
 .slash {
@@ -191,10 +191,22 @@ footer i:hover {
   height: 40px;
 }
 
+.adresse img {
+  position: relative;
+  bottom: 4rem;
+}
+
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
     height: 25rem;
+  }
+
+  #hyllTitle {
+    font-size: 3rem;
+  }
+  #hyllText {
+    font-size: 1.02rem;
   }
 }
 
@@ -207,6 +219,17 @@ footer i:hover {
   #img-slider {
     height: 20rem;
     width: 60rem;
+  }
+
+  .adresse img {
+    display: none;
+  }
+
+  #hyllTitle {
+    font-size: 2.6rem;
+  }
+  #hyllText {
+    font-size: 0.96rem;
   }
 }
 

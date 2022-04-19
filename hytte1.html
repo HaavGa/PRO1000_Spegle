@@ -17,7 +17,6 @@
     />
     <link href="/css/main.min.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/rome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,8 +38,6 @@
       src="https://kit.fontawesome.com/68b50f9545.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/rome.js" defer></script>
-    <script src="js/jquery.js"></script>
     <title>Spegle</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroller" data-offset="0">
@@ -67,34 +64,16 @@
             <li class="nav-item">
               <a href="/index.html" class="nav-link" id="navHome">Hjem</a>
             </li>
-            <li class="dropdown">
-              <a
-                class="nav-link dropdown-toggle active text-white"
-                href="#"
-                role="button"
-                id="navDestinations"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Destinasjoner
-              </a>
 
-              <div class="dropdown-menu" aria-labelledby="navDestinations">
-                <a
-                  class="dropdown-item"
-                  href="/destinasjoner.html"
-                  id="navAllDestinations"
-                  >Alle destinasjoner</a
-                >
-                <a class="dropdown-item text-white active" href="/oftevatn.html"
-                  >Oftevatn</a
-                >
-                <a class="dropdown-item" href="#">Destinasjon 2</a>
-                <a class="dropdown-item" href="#">Destinasjon 3</a>
-                <a class="dropdown-item" href="#">Destinasjon 4</a>
-              </div>
+            <li class="nav-item">
+              <a
+                href="/oftevatn.html"
+                class="nav-link active text-white"
+                id="navHome"
+                >Hyllandsfoss</a
+              >
             </li>
+
             <li class="nav-item">
               <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
             </li>
@@ -293,7 +272,7 @@
         <div class="container px-4 pt-5" id="icon-grid">
           <h2 class="text-center mb-5">Fasiliteter</h2>
           <div
-            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-4 p"
             id="fasiliteter"
           >
             <div class="col d-flex align-items-start">
@@ -311,7 +290,7 @@
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-maximize h3 me-3"></i>
               <div>
-                <h4 class="mb-0">38 m²</h4>
+                <h4 class="mb-0">38 mÂ²</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -338,7 +317,7 @@
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-plug h3 me-3"></i>
               <div>
-                <h4 class="mb-0">Strøm tilgjengelig</h4>
+                <h4 class="mb-0">StrÃ¸m tilgjengelig</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -347,49 +326,11 @@
                 <i class="fa-solid fa-smoking h4 me-3"></i>
               </div>
               <div>
-                <h4 class="mb-0">Røyking forbudt</h4>
+                <h4 class="mb-0">RÃ¸yking forbudt</h4>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="container" id="book-calender">
-        <h2 class="text-center pt-5">Book ditt opphold</h2>
-        <div class="container text-left">
-          <div class="row justify-content-center">
-            <div class="col-lg-10 mt-5">
-              <form action="#" class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="input_from">Fra</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="input_from"
-                      placeholder="Startdato"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="input_from">Til</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="input_to"
-                      placeholder="Sluttdato"
-                    />
-                  </div>
-                </div>
-              </form>
-              <a href="#" class="btn btn-primary text-white mt-3"> Book nå</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="text-center">
-        <h2>Beskrivelse</h2>
-        <p>Hytta er helt fantastisk</p>
       </section>
       <section>
         <h2 id="veibeskrivelse" class="text-center mb-5 fw-bold">
@@ -402,7 +343,7 @@
           >
             <div class="col adresse">
               <h3 class="fw-bold mb-3">Adresse</h3>
-              <p>Oftevatn<br />Høydalsmo</p>
+              <p>Oftevatn<br />HÃ¸ydalsmo</p>
             </div>
             <div id="map-container-google-1" class="map-container col mb-5">
               <iframe

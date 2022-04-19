@@ -34,9 +34,11 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
       defer
     ></script>
+    <script src="js/hyllandsfoss.js" defer></script>
     <title>Spegle</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroller" data-offset="0">
+    <!-- Navigation -->
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md py-3 bg-white navbar-light">
       <div class="container">
@@ -58,41 +60,29 @@
         <div class="collapse navbar-collapse nav-pills" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/index.html" class="nav-link" id="navHome">Hjem</a>
-            </li>
-            <li class="dropdown">
               <a
-                class="nav-link dropdown-toggle active text-white"
-                href="#"
-                role="button"
-                id="navDestinations"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                href="/index.html"
+                class="nav-link"
+                id="navHome"
+                >Hjem</a
               >
-                Destinasjoner
-              </a>
-
-              <div class="dropdown-menu" aria-labelledby="navDestinations">
-                <a
-                  class="dropdown-item"
-                  href="/destinasjoner.html"
-                  id="navAllDestinations"
-                  >Alle destinasjoner</a
-                >
-                <a class="dropdown-item text-white active" href="/oftevatn.html"
-                  >Oftevatn</a
-                >
-                <a class="dropdown-item" href="#">Destinasjon 2</a>
-                <a class="dropdown-item" href="#">Destinasjon 3</a>
-                <a class="dropdown-item" href="#">Destinasjon 4</a>
-              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/oftevatn.html"
+                class="nav-link active text-white"
+                id="navHome"
+                >Hyllandsfoss</a
+              >
+            </li>
             </li>
             <li class="nav-item">
               <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
             </li>
             <li class="nav-item">
-              <a href="/kontakt-oss.html" class="nav-link me-3" id="navContact"
+              <a href="/kontakt-oss.html"
+              class="nav-link me-3"
+              id="navContact"
                 >Kontakt oss</a
               >
             </li>
@@ -153,19 +143,21 @@
             <div class="p-5 mb-4 lc-block">
               <div class="lc-block mt-5">
                 <div editable="rich">
-                  <h2 class="fw-bolder display-3 text-white">
-                    Velkommen til Oftevatn
+                  <h2 class="fw-bolder display-3 text-white" id="hyllTitle">
+                    Velkommen til Hyllandsfoss
                   </h2>
                 </div>
               </div>
               <div class="lc-block col-md-8">
                 <div>
-                  <p class="lead text-white">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Recusandae corrupti ratione dolore autem distinctio tempora,
-                    fugit, voluptates expedita, itaque aspernatur pariatur
-                    asperiores veritatis obcaecati facilis ullam adipisci
-                    possimus. Soluta, quis.
+                  <p class="text-white lead" id="hyllText">
+                   Velkomen til Spegle Hyllandsfoss i hjarta av Telemark.
+                    Med Hyllandshylen og Hyllandsfossen som næraste naboar ligg plassen idyllisk og fredeleg til. Fossen er til vanleg regulera, men når vatnet blir slept frå Totak og nedover vassdraget er det eit spektakulært syn.
+                    Plassen er eit ypparleg utgangspunkt for alle opplevingar innan friluftsliv, kultur, lokalmat og sportsaktivitetar i området.
+                    Du kan også bruke badstoga Fløtarhuset, som også har glasveggar som speglar landskapet rundt.
+                    Det er fine turstiar nær plassen, og du kan fiske gratis med stong i Hylen.
+                    På vinteren er det oppkøyrde skiløyper i skogen rett bak hyttene.
+                    Ingen resepsjon, men digital innsjekk.
                   </p>
                 </div>
               </div>
@@ -205,11 +197,14 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 1</h5>
+                    <h5 class="card-title">Spegle Hyllandsfoss</h5>
                     <p class="card-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Neque minima et perferendis beatae quas in, hic at
-                      repellat id vitae, doloremque animi!
+                      Hotellrom i naturen <br>
+                      Veggar av glas, som speglar naturen,
+                      og gjev deg kjensla av å vera ute inne. <br>
+                      God seng, bad og kjøkenkrok <br>
+                      Reservert tid i badstoga Fløtarhuset <br>
+
                     </p>
                     <a
                       href="/hytte1.html"
@@ -227,14 +222,13 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 2</h5>
+                    <h5 class="card-title">Aasmunds tretopphytte</h5>
                     <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Explicabo eum rem molestiae!
+                      Enkel hytte høgt over bakken, med god seng og stjerneutsikt.
+                      Felles sanitæranlegg og kjøken
+
                     </p>
-                    <a
-                      href="/error.html"
-                      class="btn btn-outline-primary mt-auto"
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
                       >Les mer</a
                     >
                   </div>
@@ -248,13 +242,14 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 3</h5>
+                    <h5 class="card-title">Konglevirvel</h5>
                     <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam repudiandae cumque sed officia praesentium eaque
-                      non sunt eos.
+                      Hengande frå trea blir du byssa i søvn.
+                      Minisoverom for to.
+                      Felles sanitæranlegg og kjøken
+
                     </p>
-                    <a href="#" class="btn btn-outline-primary mt-auto"
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
                       >Les mer</a
                     >
                   </div>
@@ -268,12 +263,14 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 4</h5>
+                    <h5 class="card-title">Rennestoga
+                      </h5>
                     <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Odio, ea!
+                      Gamal historisk tømre som vart bruka til varmestoge av fløterane i Hyllandsfossen for over hundre år sidan.
+                      2 sengeplassar
+                      Felles sanitæranlegg og kjøken
                     </p>
-                    <a href="#" class="btn btn-outline-primary mt-auto"
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
                       >Les mer</a
                     >
                   </div>
@@ -287,12 +284,13 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 5</h5>
+                    <h5 class="card-title">Ivistoga</h5>
                     <p class="card-text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Ex odio omnis officia eos!
+                      Tømra hus frå 17 hundretalet frå garden Drotning i Vinje.
+                      2 soverom og 6 sengeplassar
+                      Felles sanitæranlegg og kjøken
                     </p>
-                    <a href="#" class="btn btn-outline-primary mt-auto"
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
                       >Les mer</a
                     >
                   </div>
@@ -306,23 +304,102 @@
                     alt="..."
                   />
                   <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Hytte 6</h5>
+                    <h5 class="card-title">Gunhildstoga</h5>
                     <p class="card-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Esse voluptatibus nulla repudiandae neque, et ratione!
-                      Placeat nihil ducimus totam molestias?
+                      Hytte med 2 soverom og hems, med 6 sengeplassar.
+                      Kjøken med oppvaskmaskin, bad og stoge med TV.
+
                     </p>
-                    <a href="#" class="btn btn-outline-primary mt-auto"
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
                       >Les mer</a
                     >
                   </div>
                 </div>
               </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="img/mirror-cabin.jfif"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Eivindstoga</h5>
+                    <p class="card-text">
+                      Hytte med 2 soverom og hems, med 6 sengeplassar.
+                      Kjøken med oppvaskmaskin, bad og stoge med TV.
+
+                    </p>
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
+                      >Les mer</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="img/mirror-cabin.jfif"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Fløtarhuset</h5>
+                    <p class="card-text">
+                      På gamle historiske murar står badstoga. Spesielt bygg med spegleveggar, og moglegheit for ein dukkert i Hylen.
+
+                    </p>
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
+                      >Les mer</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="img/mirror-cabin.jfif"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">6 små tømmerhus</h5>
+                    <p class="card-text">
+                     <ul>
+                       <li>
+                        Eit rom med sengeplass for 2
+                       </li>
+                       <li>
+                        Felles sanitæranlegg og kjøken
+                       </li>
+                       <li>
+                        Plass til 35 bueiningar (bobil/campingvogn/telt)
+                       </li>
+                       <li>
+                        Straumuttak til 20 bueiningar (Bobil/campingvogn)
+                       </li>
+                       <li>
+                        Nytt moderne sanitæranlegg, tilrettelagt med handikaptoalett,
+                        står klart til bruk for alle gjestene våre. Her er også vaskerom og kjøken.
+                       </li>
+                       <li>
+                        Sengeklede til utleige.(Standard i Speglehytta)
+                       </li>
+                     </ul>
+
+                    </p>
+                    <a href="error.html" class="btn btn-outline-primary mt-auto"
+                      >Les mer</a
+                    >
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <!-- Aktiviteter -->
           <div id="aktiviteter" class="bg-primary text-white mt-5">
-            <br /><br />
+            <br />
             <h2 class="text-center fw-bold mb-3">
               <br />
               Aktiviteter/attraksjoner
@@ -356,7 +433,7 @@
                   <div class="col d-flex align-items-start">
                     <i class="fa-solid fa-person-swimming h3 me-3"></i>
                     <div>
-                      <h4 class="fw-bold mb-0">Svømming</h4>
+                      <h4 class="fw-bold mb-0">Badeplasser</h4>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Libero soluta debitis quos.
@@ -366,7 +443,7 @@
                   <div class="col d-flex align-items-start">
                     <i class="fa-solid fa-person-hiking h3 me-4"></i>
                     <div>
-                      <h4 class="fw-bold mb-0">Fjelltur</h4>
+                      <h4 class="fw-bold mb-0">Turstier</h4>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Pariatur.
@@ -420,24 +497,20 @@
           </div>
           <h2 id="veibeskrivelse" class="text-center mb-5 fw-bold">
             <br />
-            <br />
-            <br />
             Veibeskrivelse
           </h2>
           <div class="container">
             <div
               class="d-flex justify-content-center row row-cols-1 row-cols-lg-4 row-cols-xl-4"
             >
-              <div class="col adresse">
-                <h3 class="fw-bold mb-3">Adresse</h3>
-                <p>Oftevatn<br />Høydalsmo</p>
+              <div class="d-flex flex-column adresse">
+                <div class="col lead">
+                  Vinjevegen 1 <br> 3890 Vinje, Norway
+                </div>
+                <img src="/img/undraw_road_sign_re_3kc3.svg" alt="road sign">
               </div>
               <div id="map-container-google-1" class="map-container col mb-5">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16203.917269138019!2d8.179966580544484!3d59.49160296654345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638b6a82c13cfe9%3A0xc2503d466b537ae8!2sOftevatn!5e0!3m2!1sno!2sno!4v1645742586644!5m2!1sno!2sno"
-                  allowfullscreen=""
-                  loading="lazy"
-                ></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.0404753126545!2d7.999999616542663!3d59.582388265751646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638cb3bcc830f67%3A0x280cfd5ce3dc0fa8!2sHyllandsfoss%20Camping!5e0!3m2!1sno!2sse!4v1650405887292!5m2!1sno!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
