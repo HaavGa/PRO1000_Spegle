@@ -17,6 +17,7 @@
     />
     <link href="/css/main.min.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/rome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,6 +39,8 @@
       src="https://kit.fontawesome.com/68b50f9545.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/rome.js" defer></script>
+    <script src="js/jquery.js"></script>
     <title>Spegle</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroller" data-offset="0">
@@ -349,6 +352,44 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="container" id="book-calender">
+        <h2 class="text-center pt-5">Book ditt opphold</h2>
+        <div class="container text-left">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 mt-5">
+              <form action="#" class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="input_from">Fra</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="input_from"
+                      placeholder="Startdato"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="input_from">Til</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="input_to"
+                      placeholder="Sluttdato"
+                    />
+                  </div>
+                </div>
+              </form>
+              <a href="#" class="btn btn-primary text-white mt-3"> Book nå</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center">
+        <h2>Beskrivelse</h2>
+        <p>Hytta er helt fantastisk</p>
       </section>
       <section>
         <h2 id="veibeskrivelse" class="text-center mb-5 fw-bold">
