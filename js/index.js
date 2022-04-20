@@ -37,6 +37,7 @@ const language = {
   },
 };
 
+const languageToggle = document.getElementById("language-toggle");
 // Check if a hash value exists in the URL
 if (window.location.hash) {
   // Set the content of the webpage
@@ -54,4 +55,6 @@ if (window.location.hash == "#en") {
   for (let i = 0, max = all.length; i < max; i++) {
     all[i].href += "#en";
   }
+  languageToggle.innerHTML =
+    '<img class="flag-dropdown me-1"src="/img/flags/en.png"/>English';
 }
