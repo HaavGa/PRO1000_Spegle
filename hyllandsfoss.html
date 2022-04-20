@@ -93,8 +93,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-translate"></i>
-                Language
+                    <img
+                      class="flag-dropdown me-1"
+                      src="/img/flags/no.png"
+                      alt="Norwegian flag"
+                    />
+                Norsk
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-white"
@@ -148,7 +152,7 @@
               </div>
               <div class="lc-block col-md-8">
                 <div>
-                  <p class="text-white lead" id="hyllText">
+                  <p class="text-white" id="hyllText">
                    Velkomen til Spegle Hyllandsfoss i hjarta av Telemark.
                     Med Hyllandshylen og Hyllandsfossen som næraste naboar ligg plassen idyllisk og fredeleg til. Fossen er til vanleg regulera, men når vatnet blir slept frå Totak og nedover vassdraget er det eit spektakulært syn.
                     Plassen er eit ypparleg utgangspunkt for alle opplevingar innan friluftsliv, kultur, lokalmat og sportsaktivitetar i området.
@@ -169,18 +173,18 @@
         >
           <ul class="nav navbar" id="scroller">
             <li class="nav-item">
-              <a class="nav-link" href="#hytter">Hytter</a>
+              <a class="nav-link" href="#hytter" id="navCabins">Hytter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aktiviteter">Aktiviteter</a>
+              <a class="nav-link" href="#aktiviteter" id="navActivities">Aktiviteter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#veibeskrivelse">Veibeskrivelse</a>
+              <a class="nav-link" href="#veibeskrivelse" id="navDirections">Veibeskrivelse</a>
             </li>
           </ul>
         </nav>
         <div id="hytter">
-          <h2 class="text-center mb-5 fw-bold">
+          <h2 class="text-center mb-5 fw-bold" id="hyllCabinHeader">
             <br />
             <br />
             Hytter
@@ -196,7 +200,7 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Spegle Hyllandsfoss</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllSpegleText">
                       Hotellrom i naturen <br>
                       Veggar av glas, som speglar naturen,
                       og gjev deg kjensla av å vera ute inne. <br>
@@ -207,6 +211,7 @@
                     <a
                       href="/hytte1.html"
                       class="btn btn-outline-primary mt-auto link"
+                      id="RM1"
                       >Les mer</a
                     >
                   </div>
@@ -221,12 +226,13 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Aasmunds tretopphytte</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllAasmund">
                       Enkel hytte høgt over bakken, med god seng og stjerneutsikt.
                       Felles sanitæranlegg og kjøken
 
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM2"
                       >Les mer</a
                     >
                   </div>
@@ -241,13 +247,14 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Konglevirvel</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllKongle">
                       Hengande frå trea blir du byssa i søvn.
                       Minisoverom for to.
                       Felles sanitæranlegg og kjøken
 
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM3"
                       >Les mer</a
                     >
                   </div>
@@ -263,12 +270,13 @@
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Rennestoga
                       </h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllRenne">
                       Gamal historisk tømre som vart bruka til varmestoge av fløterane i Hyllandsfossen for over hundre år sidan.
                       2 sengeplassar
                       Felles sanitæranlegg og kjøken
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM4"
                       >Les mer</a
                     >
                   </div>
@@ -283,12 +291,13 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Ivistoga</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllIvi">
                       Tømra hus frå 17 hundretalet frå garden Drotning i Vinje.
                       2 soverom og 6 sengeplassar
                       Felles sanitæranlegg og kjøken
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM5"
                       >Les mer</a
                     >
                   </div>
@@ -303,12 +312,13 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Gunhildstoga</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllGunhild">
                       Hytte med 2 soverom og hems, med 6 sengeplassar.
                       Kjøken med oppvaskmaskin, bad og stoge med TV.
 
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM6"
                       >Les mer</a
                     >
                   </div>
@@ -323,12 +333,13 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">Eivindstoga</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="hyllEivind">
                       Hytte med 2 soverom og hems, med 6 sengeplassar.
                       Kjøken med oppvaskmaskin, bad og stoge med TV.
 
                     </p>
                     <a href="error.html" class="btn btn-outline-primary mt-auto link"
+                    id="RM7"
                       >Les mer</a
                     >
                   </div>
@@ -343,8 +354,7 @@
                   />
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title">6 små tømmerhus</h5>
-                    <p class="card-text">
-                     <ul>
+                    <ul class="card-text" id="hyllTømmer">
                        <li>
                         Eit rom med sengeplass for 2
                        </li>
@@ -364,10 +374,9 @@
                        <li>
                         Sengeklede til utleige.(Standard i Speglehytta)
                        </li>
-                     </ul>
-
-                    </p>
+                    </ul>
                     <a href="error.html" class="btn btn-outline-primary mt-auto"
+                    id="RM8"
                       >Les mer</a
                     >
                   </div>
@@ -376,14 +385,17 @@
             </div>
           </div>
           <!-- Aktiviteter -->
-          <div id="aktiviteter" class="bg-primary text-white mt-5">
+          <section class="bg-primary text-white mt-5">
             <br />
             <br />
-            <h2 class="text-center fw-bold mb-3">
-              <br />
-              Aktiviteter/attraksjoner
-            </h2>
-            <section>
+            <div id="aktiviteter">
+              <h2 class="text-center fw-bold mb-3" id="hyllActivitiesHeader">
+                <br />
+                <br />
+                Aktiviteter/attraksjoner
+              </h2>
+            </div>
+            <div>
               <div class="container px-4" id="icon-grid">
                 <div
                   class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5"
@@ -461,9 +473,9 @@
                     </div>
                   </div>
                   <div class="col d-flex align-items-start">
-                    <i class="fa-solid fa-person-hiking h3 me-4"></i>
+                    <i class="fa-solid fa-building-columns h3 me-3"></i>
                     <div>
-                      <h4 class="fw-bold mb-0">Fjelltur</h4>
+                      <h4 class="fw-bold mb-0">Kultur</h4>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Pariatur.
@@ -472,27 +484,30 @@
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
-          <h2 id="veibeskrivelse" class="text-center mb-5 fw-bold">
-            <br />
-            Veibeskrivelse
-          </h2>
-          <div class="container">
-            <div
-              class="d-flex justify-content-center row row-cols-1 row-cols-lg-4 row-cols-xl-4"
-            >
-              <div class="d-flex flex-column adresse">
-                <div class="col lead">
-                  Vinjevegen 1 <br> 3890 Vinje, Norway
+            </div>
+          </section>
+          <section id="veibeskrivelse">
+            <br>
+            <h2 class="text-center my-5 fw-bold" id="hyllDirectionsHeader">
+              <br />
+              Veibeskrivelse
+            </h2>
+            <div class="container">
+              <div
+                class="d-flex justify-content-center row row-cols-1 row-cols-lg-4 row-cols-xl-4"
+              >
+                <div class="d-flex flex-column adresse">
+                  <div class="col lead">
+                    Vinjevegen 1 <br> 3890 Vinje, Norway
+                  </div>
+                  <img src="/img/undraw_road_sign_re_3kc3.svg" alt="road sign">
                 </div>
-                <img src="/img/undraw_road_sign_re_3kc3.svg" alt="road sign">
-              </div>
-              <div id="map-container-google-1" class="map-container col mb-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.0404753126545!2d7.999999616542663!3d59.582388265751646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638cb3bcc830f67%3A0x280cfd5ce3dc0fa8!2sHyllandsfoss%20Camping!5e0!3m2!1sno!2sse!4v1650405887292!5m2!1sno!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map-container-google-1" class="map-container col mb-5">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.0404753126545!2d7.999999616542663!3d59.582388265751646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638cb3bcc830f67%3A0x280cfd5ce3dc0fa8!2sHyllandsfoss%20Camping!5e0!3m2!1sno!2sse!4v1650405887292!5m2!1sno!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </main>
