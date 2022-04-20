@@ -199,8 +199,14 @@ footer i:hover {
 #hyllTitle {
   font-size: 4rem;
 }
+
 #hyllText {
   font-size: 1rem;
+}
+
+.contact-us-header {
+  position: relative;
+  bottom: 3.5rem;
 }
 @media (max-width: 1200px) {
   #map-container-google-1 {
