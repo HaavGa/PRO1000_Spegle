@@ -21,6 +21,14 @@ if (window.location.hash) {
 }
 if (window.location.hash == "#en") {
   // Navigation
+  navHome.textContent = language.en.navHome;
+  navAbout.textContent = language.en.navAbout;
+  navContact.textContent = language.en.navContact;
+  // Hyllandsfoss
   hyllTitle.textContent = language.en.hyllTitle;
   hyllText.textContent = language.en.hyllText;
+  var all = document.querySelectorAll(".link");
+  for (var i = 0, max = all.length; i < max; i++) {
+    all[i].href += "#en";
+  }
 }

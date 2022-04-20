@@ -34,8 +34,6 @@ const language = {
     indexText:
       "Live close to nature and wildlife in Speglehyttene. Surrounded by mountains, forests and lakes, you can find peace and rest. Take a break from everyday life, and create good memories in these very special cabins with glass walls that reflect the surrounding landscape. Good bed, bathroom and kitchenette. Reserved use of sauna.",
     indexBtn: "Book now",
-    // Hyllandsfoss
-    hyllTitle: "Welcome to Hyllandsfoss",
   },
 };
 
@@ -52,4 +50,8 @@ if (window.location.hash == "#en") {
   // Index
   indexText.textContent = language.en.indexText;
   indexBtn.textContent = language.en.indexBtn;
+  const all = document.querySelectorAll(".link");
+  for (let i = 0, max = all.length; i < max; i++) {
+    all[i].href += "#en";
+  }
 }
