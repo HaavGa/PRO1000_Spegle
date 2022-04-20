@@ -149,8 +149,46 @@ footer i:hover {
   margin-right: auto;
 }
 
+.bilde img {
+  object-fit: cover;
+}
+
 .card-text {
   font-size: 0.9rem;
+}
+
+.fa-2 {
+  font-size: 14.5rem;
+}
+
+.t1,
+.t2,
+.t3,
+.t4,
+.t5 {
+  position: relative;
+  top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.t1 {
+  right: 0.2rem;
+}
+
+.t2 {
+  left: 0.7rem;
+}
+
+.t3 {
+  left: 0.5rem;
+}
+
+.t4 {
+  right: 0.2rem;
+}
+
+.t5 {
+  right: 1.9rem;
 }
 
 #img-slider {
