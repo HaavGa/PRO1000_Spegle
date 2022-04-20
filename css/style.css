@@ -86,12 +86,6 @@ main .card {
   width: 5.5rem;
 }
 
-// .active {
-//   border: 1px solid #4b88a0;
-//   border-radius: 5px;
-//   box-shadow: 1px 1px 2px #4b88a0;
-// }
-
 .active {
   background: #4b88a0;
   color: #fff;
@@ -239,13 +233,18 @@ footer i:hover {
 }
 
 #hyllText {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .contact-us-header {
   position: relative;
   bottom: 3.5rem;
 }
+
+#hytter a {
+  width: 7.4rem;
+}
+
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
