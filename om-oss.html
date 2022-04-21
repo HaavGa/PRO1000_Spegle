@@ -29,6 +29,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="js/om-oss.js" defer></script>
     <title>Spegle</title>
   </head>
   <body>
@@ -55,7 +56,7 @@
             <li class="nav-item">
               <a
                 href="/index.html"
-                class="nav-link"
+                class="nav-link link"
                 id="navHome"
                 >Hjem</a
               >
@@ -63,16 +64,16 @@
             <li class="nav-item">
               <a
                 href="/hyllandsfoss.html"
-                class="nav-link"
+                class="nav-link link"
                 >Hyllandsfoss</a
               >
             </li>
             </li>
             <li class="nav-item">
-              <a href="/om-oss.html" class="nav-link active text-white" id="navAbout">Om oss</a>
+              <a href="/om-oss.html" class="nav-link link active text-white" id="navAbout">Om oss</a>
             </li>
             <li class="nav-item">
-              <a href="/kontakt-oss.html" class="nav-link me-3" id="navContact"
+              <a href="/kontakt-oss.html" class="nav-link link me-3" id="navContact"
                 >Kontakt oss</a
               >
             </li>
@@ -85,8 +86,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-translate"></i>
-                Language
+                    <img
+                      class="flag-dropdown me-1"
+                      src="/img/flags/no.png"
+                      alt="Norwegian flag"
+                    />
+                Norsk
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-white"
@@ -128,26 +133,26 @@
     </nav>
     <main id="om-oss">
       <section class="container border-top">
-        <h2 class="text-center my-4 fw-bold">Om oss</h2>
+        <h2 class="text-center my-4 fw-bold" id="aboutHeader">Om oss</h2>
         <div class="d-flex flex-row justify-content-center">
           <i class="fa-solid fa-2"></i>
           <div class="flex-row pb-5 lh-1">
-            <p class="t1">søsken av fem</p>
-            <p class="t2">hovud med mange idear</p>
-            <p class="t3">par hender som likar å skape</p>
-            <p class="t4">par auger for gode design</p>
-            <p class="t5">hjerte for gode opplevingar</p>
+            <p id="t1">søsken av fem</p>
+            <p id="t2">hovud med mange idear</p>
+            <p id="t3">par hender som likar å skape</p>
+            <p id="t4">par auger for gode design</p>
+            <p id="t5">hjerte for gode opplevingar</p>
           </div>
         </div>
-        <p class="text-center fs-3 pt-2">Velkommen på eventyr i Telemark!</p>
+        <p class="text-center fs-3 pt-2" id="aboutSub">Velkommen på eventyr i Telemark!</p>
       </section>
-      <!-- <div class="img-container my-5">
+      <div class="img-container my-5">
         <img
-          src="/img/undraw_nature_fun_re_iney.svg"
-          alt="illustrasjon av natur"
-          width="300"
+          src="/img/om-oss/kariogkjetil2.jpg"
+          alt="Kari og Kjetil som barn"
+          width="250"
         />
-      </div> -->
+      </div>
       <section class="container pt-4">
         <div class="row bilde">
           <div class="col-md-6 image-padding">

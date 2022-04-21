@@ -23,8 +23,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="js/index.js" defer></script>
-    <!-- <script src="js/main.js" defer></script> -->
+    <script src="js/error.js" defer></script>
     <title>Spegle</title>
   </head>
   <body>
@@ -60,18 +59,16 @@
             <li class="nav-item">
               <a
                 href="/hyllandsfoss.html"
-                class="nav-link link"
+                class="nav-link link active text-white"
                 >Hyllandsfoss</a
               >
             </li>
             </li>
             <li class="nav-item">
-              <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
+              <a href="/om-oss.html" class="nav-link link" id="navAbout">Om oss</a>
             </li>
             <li class="nav-item">
-              <a href="/kontakt-oss.html"
-              class="nav-link link me-3"
-              id="navContact"
+              <a href="/kontakt-oss.html" class="nav-link link me-3" id="navContact"
                 >Kontakt oss</a
               >
             </li>
@@ -84,8 +81,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-translate"></i>
-                Language
+                    <img
+                      class="flag-dropdown me-1"
+                      src="/img/flags/no.png"
+                      alt="Norwegian flag"
+                    />
+                Norsk
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-white"
@@ -126,18 +127,18 @@
       </div>
     </nav>
     <main class="text-center border-top">
-      <h2 class="my-4">Denne hytten er under konstruksjon</h2>
+      <h2 class="my-4" id="errorTitle">Denne hytten er under konstruksjon!</h2>
       <img
         src="/img/undraw_under_construction_-46-pa.svg"
         alt="Nettside under konstruksjon"
         height="400"
         width="500"
       />
-      <p class="py-3 lead">
+      <p class="py-3 lead" id="errorSub">
         Ups, her var det ikke mye å se! Hytten er foreløpig ikke tilgjengelig.
         Følg oss på sosiale medier for oppdateringer!
       </p>
-      <a href="/hyllandsfoss.html#hytter  " class="btn btn-lg btn-primary text-white"
+      <a href="/hyllandsfoss.html#hytter  " class="btn btn-lg btn-primary text-white" id="errorBtn"
         >Gå tilbake</a
       >
     </main>

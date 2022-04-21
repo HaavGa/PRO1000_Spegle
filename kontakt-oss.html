@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="js/kontakt-oss.js" defer></script>
     <title>Spegle</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroller2" data-offset="0">
@@ -46,28 +47,23 @@
         <div class="collapse navbar-collapse nav-pills" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                href="/index.html"
-                class="nav-link link"
-                id="navHome"
-                >Hjem</a
-              >
+              <a href="/index.html" class="nav-link link" id="navHome">Hjem</a>
             </li>
             <li class="nav-item">
-              <a
-                href="/hyllandsfoss.html"
-                class="nav-link link"
+              <a href="/hyllandsfoss.html" class="nav-link link"
                 >Hyllandsfoss</a
               >
             </li>
+            <li class="nav-item">
+              <a href="/om-oss.html" class="nav-link link" id="navAbout"
+                >Om oss</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
-            </li>
-            <li class="nav-item">
-              <a href="/kontakt-oss.html"
-              class="nav-link active text-white link me-3"
-              id="navContact"
+              <a
+                href="/kontakt-oss.html"
+                class="nav-link link me-3 active text-white"
+                id="navContact"
                 >Kontakt oss</a
               >
             </li>
@@ -80,8 +76,12 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-translate"></i>
-                Language
+                <img
+                  class="flag-dropdown me-1"
+                  src="/img/flags/no.png"
+                  alt="Norwegian flag"
+                />
+                Norsk
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-white"
@@ -127,10 +127,14 @@
       >
         <ul class="nav navbar" id="scroller2">
           <li class="nav-item">
-            <a class="nav-link" href="#faq">Ofte stile spørsmål</a>
+            <a class="nav-link" href="#faq" id="faqScroll"
+              >Ofte stilte spørsmål</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontakt oss</a>
+            <a class="nav-link" href="#contact" id="contactScroll"
+              >Kontakt oss</a
+            >
           </li>
         </ul>
       </nav>
@@ -139,11 +143,12 @@
         class="feature d-flex flex-column align-items-center pt-3 border-top"
         id="faq"
       >
-        <br /> <br>
+        <br />
+        <br />
         <div class="feature-icon mb-2">
           <i class="bi bi-question-circle"></i>
         </div>
-        <h3 class="fw-bold">Ofte stilte spørsmål</h3>
+        <h3 class="fw-bold" id="faqHeader">Ofte stilte spørsmål</h3>
 
         <div class="container bg-white text-light pt-lg-3 p-sm-3 pb-sm-4">
           <div
@@ -159,6 +164,7 @@
                   data-bs-target="#flush-collapseOne"
                   aria-expanded="false"
                   aria-controls="flush-collapseOne"
+                  id="q1"
                 >
                   Spørsmål 1
                 </button>
@@ -451,24 +457,32 @@
       </section>
       <section
         class="bg-primary text-white text-center text-sm-start"
-         id="contact"
+        id="contact"
       >
-        <br> <br>
+        <br />
+        <br />
         <!-- Kontaktskjema -->
         <div class="container pt-5">
-          <h2 class="mt-5 text-center fw-bold contact-us-header">Kontakt oss</h2>
+          <h2
+            class="mt-5 text-center fw-bold contact-us-header"
+            id="contactUsHeader"
+          >
+            Kontakt oss
+          </h2>
           <div class="row g-4 pb-5 pt-3 row-cols-1 row-cols-md-2">
             <div class="feature col d-flex flex-column align-items-center">
               <div class="feature-icon mb-2">
                 <i class="bi bi-telephone"></i>
               </div>
-              <h3>Telefon</h3>
+              <h3 id="phone">Telefon</h3>
               <p>
-                Telefonnummer:
-                <a href="tel:12345678" class="text-white">123 45 678</a>
+                <a href="tel:12345678" class="text-white text-decoration-none"
+                  >123 45 678</a
+                >
               </p>
               <p class="text-center">
-                Åpningstider: Mandag - Fredag <br />
+                <span id="openingHours"> Åpningstider: Mandag - Fredag</span>
+                <br />
                 (10:00 - 17:00)
               </p>
             </div>
@@ -480,7 +494,7 @@
                 <div class="feature-icon mb-2">
                   <i class="bi bi-envelope"></i>
                 </div>
-                <h3>E-post</h3>
+                <h3 id="email">E-post</h3>
                 <p>spegle@spegle.no</p>
               </div>
             </a>
