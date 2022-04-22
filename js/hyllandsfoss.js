@@ -66,9 +66,9 @@ const language = {
     RM6: "Read more",
     RM7: "Read more",
     RM8: "Read more",
-    hyllCabinHeader: "Cabins",
-    hyllActivitiesHeader: "Activities/attractions",
-    hyllDirectionsHeader: "Directions",
+    hyllCabinHeader: "<br>" + "<br>" + "Cabins",
+    hyllActivitiesHeader: "<br>" + "<br>" + "Activities/attractions",
+    hyllDirectionsHeader: "<br>" + "<br>" + "Directions",
   },
 };
 const languageToggle = document.getElementById("language-toggle");
@@ -104,9 +104,9 @@ if (window.location.hash == "#en") {
   RM6.textContent = language.en.RM6;
   RM7.textContent = language.en.RM7;
   RM8.textContent = language.en.RM8;
-  hyllCabinHeader.textContent = language.en.hyllCabinHeader;
-  hyllActivitiesHeader.textContent = language.en.hyllActivitiesHeader;
-  hyllDirectionsHeader.textContent = language.en.hyllDirectionsHeader;
+  hyllCabinHeader.innerHTML = language.en.hyllCabinHeader;
+  hyllActivitiesHeader.innerHTML = language.en.hyllActivitiesHeader;
+  hyllDirectionsHeader.innerHTML = language.en.hyllDirectionsHeader;
 
   // Change language
   const all = document.querySelectorAll(".link");
