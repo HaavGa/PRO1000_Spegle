@@ -335,6 +335,24 @@ footer i:hover {
     height: 30rem;
   }
 }
+@media (max-width: 470px) {
+  #t1,
+  #t2,
+  #t3,
+  #t4,
+  #t5 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  #t1,
+  #t2,
+  #t3,
+  #t4,
+  #t5 {
+    font-size: 0.85rem;
+  }
+}
 
 @media (max-width: 400px) {
   #scroller .nav-item {
