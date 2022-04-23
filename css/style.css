@@ -57,7 +57,7 @@ nav img {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 5.5rem;
+  bottom: 8rem;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -290,7 +290,7 @@ footer i:hover {
     font-size: 2.6rem;
   }
   #hyllText {
-    font-size: 0.96rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -343,6 +343,16 @@ footer i:hover {
     height: 30rem;
   }
 }
+@media (max-width: 500px) {
+  #hyllTitle {
+    font-size: 1.6rem;
+  }
+
+  #hyllText {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 470px) {
   #t1,
   #t2,
@@ -351,27 +361,57 @@ footer i:hover {
   #t5 {
     font-size: 1rem;
   }
-}
-@media (max-width: 400px) {
-  #t1,
-  #t2,
-  #t3,
-  #t4,
-  #t5 {
-    font-size: 0.85rem;
-  }
-}
 
-@media (max-width: 400px) {
-  #scroller .nav-item {
-    padding: 0 0;
-  }
+  @media (max-width: 400px) {
+    #t1,
+    #t2,
+    #t3,
+    #t4,
+    #t5 {
+      font-size: 0.85rem;
+    }
 
-  #hyllTitle {
-    font-size: 1.9rem;
-  }
+    #scroller .nav-item {
+      padding: 0;
+      margin: 0;
+    }
 
-  #hyllText {
-    font-size: 0.75rem;
+    #hyllTitle {
+      font-size: 1.9rem;
+    }
+
+    #hyllText {
+      font-size: 0.65rem;
+    }
+  }
+  @media (max-width: 380px) {
+    #hyllTitle {
+      bottom: 4rem;
+    }
+
+    #hyllText {
+      // font-size: 0.65rem;
+      bottom: 4rem;
+    }
+    .header {
+      font-size: 2rem;
+    }
+
+    .text {
+      font-size: 1rem;
+    }
+
+    #scroller a {
+      font-size: 0.8rem;
+    }
+
+    #om-oss i {
+      font-size: 12rem;
+    }
+  }
+  @media (max-width: 300px) {
+    #scroller a {
+      font-size: 0.65rem;
+    }
   }
 }

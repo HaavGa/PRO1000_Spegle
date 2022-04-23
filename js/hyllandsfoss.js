@@ -68,7 +68,7 @@ const language = {
     RM8: "Read more",
     hyllCabinHeader: "<br>" + "<br>" + "Cabins",
     hyllActivitiesHeader: "<br>" + "<br>" + "Activities/attractions",
-    hyllDirectionsHeader: "<br>" + "<br>" + "Directions",
+    hyllDirectionsHeader: "<br>" + "<br>" + "<br>" + "Directions",
   },
 };
 const languageToggle = document.getElementById("language-toggle");
