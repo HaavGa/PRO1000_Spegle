@@ -46,15 +46,24 @@ nav img {
 }
 
 #oftevatn-hero {
-  height: calc(100vh - 10rem);
+  height: calc(90vh - 10rem);
   background-image: url("/img/cabin.jfif");
   background-position: center;
   background-size: cover;
   object-fit: cover;
 }
 
-#hero:before,
 #oftevatn-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 5.5rem;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#hero:before {
   content: "";
   position: absolute;
   top: 0;
