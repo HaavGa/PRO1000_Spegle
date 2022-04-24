@@ -10,6 +10,7 @@
     />
     <link href="/css/main.min.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/rome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,6 +35,8 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
       defer
     ></script>
+    <script src="js/rome.js" defer></script>
+    <script src="js/jquery.js" defer></script>
     <script src="js/hyllandsfoss.js" defer></script>
     <title>Spegle</title>
   </head>
@@ -41,6 +44,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md py-3 bg-white navbar-light">
       <div class="container">
+        c`
         <a href="/index.html" class="navbar-brand">
           <img src="/img/newlogo.png" alt="Spegle Logo" /><span class="ps-3"
             >Spegle</span
@@ -211,12 +215,104 @@
                       God seng, bad og kjøkenkrok <br />
                       Reservert tid i badstoga Fløtarhuset <br />
                     </p>
-                    <a
-                      href="/hytte1.html"
-                      class="btn btn-outline-primary mt-auto link"
-                      id="RM1"
-                      >Les mer</a
-                    >
+                    <div class="d-flex justify-content-between">
+                      <a
+                        href="/hytte1.html"
+                        class="btn btn-outline-primary mt-auto link"
+                        id="RM1"
+                        >Les mer</a
+                      >
+                      <a
+                        href="/hytte1.html"
+                        class="btn btn-primary mt-auto link text-white"
+                        id="RM1"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        >Book</a
+                      >
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                Spegle Hyllandsfoss
+                              </h5>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <section class="container" id="book-calender">
+                                <h2 class="text-center pt-2" id="book1">
+                                  Book ditt opphold
+                                </h2>
+                                <div class="container text-left">
+                                  <div class="row justify-content-center">
+                                    <div
+                                      class="col-lg-10 mt-2 d-flex flex-column align-items-center"
+                                    >
+                                      <form action="#" class="row">
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <label for="input_from" id="from1"
+                                              >Fra</label
+                                            >
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              id="input_from"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="form-group">
+                                            <label for="input_from" id="to1"
+                                              >Til</label
+                                            >
+                                            <input
+                                              type="text"
+                                              class="form-control"
+                                              id="input_to"
+                                            />
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                            </div>
+                            <div class="modal-footer" id="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                data-bs-dismiss="modal"
+                              >
+                                Lukk
+                              </button>
+                              <a
+                                type="button"
+                                class="btn btn-primary text-white"
+                                href="/hyllandsfoss.html"
+                              >
+                                <!--Link til eksternt bookingsystem-->
+                                Til bestilling
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
