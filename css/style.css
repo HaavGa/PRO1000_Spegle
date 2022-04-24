@@ -289,6 +289,32 @@ footer i:hover {
   align-items: center;
 }
 
+.to-top {
+  background: #fff;
+  position: fixed;
+  bottom: 1rem;
+  right: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.scroll {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
