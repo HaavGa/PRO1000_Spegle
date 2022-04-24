@@ -280,6 +280,15 @@ footer i:hover {
   z-index: 9999;
 }
 
+.nav-item a {
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   #map-container-google-1 {
     width: 45rem;
@@ -329,6 +338,13 @@ footer i:hover {
   .nav-item,
   .dropdown {
     padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin-top: 0.2rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: start;
   }
 
   #faq {
