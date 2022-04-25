@@ -30,6 +30,7 @@ const language = {
     navHome: "Home",
     navAbout: "About",
     navContact: "Contact us",
+    navBook: "Book now",
     // Index
     indexText:
       "Live close to nature and wildlife in Speglehyttene. Surrounded by mountains, forests and lakes, you can find peace and rest. Take a break from everyday life, and create good memories in these very special cabins with glass walls that reflect the surrounding landscape. Good bed, bathroom and kitchenette. Reserved use of sauna.",
@@ -48,6 +49,7 @@ if (window.location.hash == "#en") {
   navHome.textContent = language.en.navHome;
   navAbout.textContent = language.en.navAbout;
   navContact.textContent = language.en.navContact;
+  navBook.textContent = language.en.navBook;
   // Index
   indexText.textContent = language.en.indexText;
   indexBtn.textContent = language.en.indexBtn;

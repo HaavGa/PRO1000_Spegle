@@ -9,6 +9,7 @@ const language = {
     navHome: "Home",
     navAbout: "About",
     navContact: "Contact us",
+    navBook: "Book now",
     // Om oss
     aboutHeader: "About us",
     aboutSub: "Welcome to an adventure in Telemark!",
@@ -31,6 +32,7 @@ if (window.location.hash == "#en") {
   navHome.textContent = language.en.navHome;
   navAbout.textContent = language.en.navAbout;
   navContact.textContent = language.en.navContact;
+  navBook.textContent = language.en.navBook;
   // om oss
   aboutHeader.textContent = language.en.aboutHeader;
   aboutSub.textContent = language.en.aboutSub;

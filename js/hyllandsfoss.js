@@ -9,6 +9,7 @@ const language = {
     navHome: "Home",
     navAbout: "About",
     navContact: "Contact us",
+    navBook: "Book now",
     // Hyllandsfoss
     hyllTitle: "Welcome to Hyllandsfoss",
     hyllText:
@@ -19,12 +20,6 @@ const language = {
     cabinsHeader: "Cabins",
     ActivitiesHeader: "Activities",
     directionsHeader: "Directions",
-    hyllSpegleText:
-      "Hotel rooms in nature Glass walls, which reflect nature, and give you the feeling of being outside" +
-      "<br>" +
-      "Good bed, bathroom and kitchenette" +
-      "<br>" +
-      "Reserved time in the sauna Fløtarhuset",
     hyllAasmund:
       "Simple cottage high above the ground, with good bed and star views. Shared sanitary facilities and kitchen",
     hyllKongle:
@@ -65,10 +60,19 @@ const language = {
     RM5: "Read more",
     RM6: "Read more",
     RM7: "Read more",
-    RM8: "Read more",
     hyllCabinHeader: "<br>" + "<br>" + "Cabins",
     hyllActivitiesHeader: "<br>" + "<br>" + "Activities/attractions",
     hyllDirectionsHeader: "<br>" + "<br>" + "<br>" + "Directions",
+    hyllActivitiesText:
+      "Not far away from the cabins, we find Hyllandsfossen." +
+      "<br>" +
+      "It has a drop of 55 meters, and is truly a sight to be seen.",
+    // Book modal
+    book1: "Book your stay",
+    from1: "From",
+    to1: "To",
+    close1: "Close",
+    order1: "Go to order",
   },
 };
 const languageToggle = document.getElementById("language-toggle");
@@ -81,14 +85,15 @@ if (window.location.hash == "#en") {
   navHome.textContent = language.en.navHome;
   navAbout.textContent = language.en.navAbout;
   navContact.textContent = language.en.navContact;
+  navBook.textContent = language.en.navBook;
   // Hyllandsfoss
   hyllTitle.textContent = language.en.hyllTitle;
   hyllText.textContent = language.en.hyllText;
   navCabins.textContent = language.en.navCabins;
   navActivities.textContent = language.en.navActivities;
   navDirections.textContent = language.en.navDirections;
+  hyllCabinHeader.innerHTML = language.en.hyllCabinHeader;
   // Cabins
-  hyllSpegleText.innerHTML = language.en.hyllSpegleText;
   hyllAasmund.textContent = language.en.hyllAasmund;
   hyllKongle.textContent = language.en.hyllKongle;
   hyllRenne.textContent = language.en.hyllRenne;
@@ -103,9 +108,17 @@ if (window.location.hash == "#en") {
   RM5.textContent = language.en.RM5;
   RM6.textContent = language.en.RM6;
   RM7.textContent = language.en.RM7;
-  RM8.textContent = language.en.RM8;
-  hyllCabinHeader.innerHTML = language.en.hyllCabinHeader;
+  // Order modal
+  book1.textContent = language.en.book1;
+  from1.textContent = language.en.from1;
+  to1.textContent = language.en.to1;
+  close1.textContent = language.en.close1;
+  order1.textContent = language.en.order1;
+
+  // Activities
   hyllActivitiesHeader.innerHTML = language.en.hyllActivitiesHeader;
+  hyllActivitiesText.innerHTML = language.en.hyllActivitiesText;
+  // Directions
   hyllDirectionsHeader.innerHTML = language.en.hyllDirectionsHeader;
 
   // Change language
