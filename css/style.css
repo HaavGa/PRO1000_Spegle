@@ -271,6 +271,7 @@ footer i:hover {
 #modal-footer button:hover {
   color: #fff;
 }
+
 #book-calender .col-md-6 {
   display: flex;
   justify-content: center;
@@ -278,10 +279,6 @@ footer i:hover {
 
 .rd-container {
   z-index: 9999;
-}
-
-.nav-item a {
-  white-space: nowrap;
 }
 
 .navbar-nav {
@@ -328,6 +325,11 @@ footer i:hover {
   #hyllText {
     font-size: 1.02rem;
   }
+
+  #language-dropdown {
+    position: absolute;
+    left: -1rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -352,25 +354,48 @@ footer i:hover {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 992px) {
+  .nav-item a {
+    white-space: nowrap;
+  }
+}
 
 @media (max-width: 850px) {
   #desc1 {
     padding: 0 2rem;
   }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  #language-dropdown {
+    position: absolute;
+    left: -3rem;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-link.active,
   .nav-item .active,
   .nav-item,
   .dropdown {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    margin-top: 0.2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0.15rem;
   }
 
   .navbar-nav {
     display: flex;
     align-items: start;
+  }
+
+  .nav-item a {
+    font-size: 0.85rem;
+  }
+
+  #language-dropdown {
+    position: absolute;
+    left: 0;
   }
 
   #faq {
