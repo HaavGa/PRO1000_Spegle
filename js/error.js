@@ -9,6 +9,7 @@ const language = {
     navHome: "Home",
     navAbout: "About",
     navContact: "Contact us",
+    navBook: "Book now",
     // Error
     errorTitle: "This cabin is under construction!",
     errorSub:
@@ -28,6 +29,7 @@ if (window.location.hash == "#en") {
   navHome.textContent = language.en.navHome;
   navAbout.textContent = language.en.navAbout;
   navContact.textContent = language.en.navContact;
+  navBook.textContent = language.en.navBook;
   // error
   errorTitle.textContent = language.en.errorTitle;
   errorSub.textContent = language.en.errorSub;
