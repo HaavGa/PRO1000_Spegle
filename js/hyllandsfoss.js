@@ -63,10 +63,27 @@ const language = {
     hyllCabinHeader: "<br>" + "<br>" + "Cabins",
     hyllActivitiesHeader: "<br>" + "<br>" + "Activities/attractions",
     hyllDirectionsHeader: "<br>" + "<br>" + "<br>" + "Directions",
-    hyllActivitiesText:
+    // Activities
+    // Headers
+    ah2: "Biking",
+    ah3: "Swimming spots",
+    ah4: "Hiking trail",
+    ah5: "Fishing",
+    ah6: "Skiing",
+    ah7: "Sauna",
+    ah8: "Culture",
+    // Text
+    at1:
       "Not far away from the cabins, we find Hyllandsfossen." +
       "<br>" +
       "It has a drop of 55 meters, and is truly a sight to be seen.",
+    at2: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at3: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at4: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at5: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at6: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at7: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
+    at8: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. nobis ab eos nostrum nesciunt cum odio odit delectus voluptatibus.",
     // Book modal
     book1: "Book your stay",
     from1: "From",
@@ -117,7 +134,23 @@ if (window.location.hash == "#en") {
 
   // Activities
   hyllActivitiesHeader.innerHTML = language.en.hyllActivitiesHeader;
-  hyllActivitiesText.innerHTML = language.en.hyllActivitiesText;
+  // Headers
+  ah2.textContent = language.en.ah2;
+  ah3.textContent = language.en.ah3;
+  ah4.textContent = language.en.ah4;
+  ah5.textContent = language.en.ah5;
+  ah6.textContent = language.en.ah6;
+  ah7.textContent = language.en.ah7;
+  ah8.textContent = language.en.ah8;
+  // Text
+  at1.innerHTML = language.en.at1;
+  at2.textContent = language.en.at2;
+  at3.textContent = language.en.at3;
+  at4.textContent = language.en.at4;
+  at5.textContent = language.en.at5;
+  at6.textContent = language.en.at6;
+  at7.textContent = language.en.at7;
+  at8.textContent = language.en.at8;
   // Directions
   hyllDirectionsHeader.innerHTML = language.en.hyllDirectionsHeader;
 
