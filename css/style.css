@@ -330,6 +330,12 @@ footer i:hover {
     position: absolute;
     left: -1rem;
   }
+
+  #errorSub {
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -430,6 +436,19 @@ footer i:hover {
   #book-calender input {
     width: 10rem;
   }
+
+  #errorSub {
+    font-size: 1rem;
+    margin: 0 2rem;
+  }
+
+  .to-top {
+    bottom: 1rem;
+    right: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -442,6 +461,11 @@ footer i:hover {
     width: 30rem;
     height: 30rem;
   }
+
+  #errorContent img {
+    height: 300px;
+    width: 350px;
+  }
 }
 @media (max-width: 500px) {
   #hyllTitle {
@@ -450,6 +474,11 @@ footer i:hover {
 
   #hyllText {
     font-size: 0.8rem;
+  }
+
+  .navbar-brand img {
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -462,56 +491,71 @@ footer i:hover {
     font-size: 1rem;
   }
 
-  @media (max-width: 400px) {
-    #t1,
-    #t2,
-    #t3,
-    #t4,
-    #t5 {
-      font-size: 0.85rem;
-    }
-
-    #scroller .nav-item {
-      padding: 0;
-      margin: 0;
-    }
-
-    #hyllTitle {
-      font-size: 1.9rem;
-    }
-
-    #hyllText {
-      font-size: 0.65rem;
-    }
+  #errorSub {
+    font-size: 0.8rem;
+    margin: 0 1rem;
   }
-  @media (max-width: 380px) {
-    #hyllTitle {
-      bottom: 4rem;
-    }
+}
 
-    #hyllText {
-      // font-size: 0.65rem;
-      bottom: 4rem;
-    }
-    .header {
-      font-size: 2rem;
-    }
-
-    .text {
-      font-size: 1rem;
-    }
-
-    #scroller a {
-      font-size: 0.8rem;
-    }
-
-    #om-oss i {
-      font-size: 12rem;
-    }
+@media (max-width: 400px) {
+  #t1,
+  #t2,
+  #t3,
+  #t4,
+  #t5 {
+    font-size: 0.85rem;
   }
-  @media (max-width: 300px) {
-    #scroller a {
-      font-size: 0.65rem;
-    }
+
+  #scroller .nav-item {
+    padding: 0;
+    margin: 0;
+  }
+
+  #hyllTitle {
+    font-size: 1.9rem;
+  }
+
+  #hyllText {
+    font-size: 0.65rem;
+  }
+  #errorContent img {
+    height: 250px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  #hyllTitle {
+    bottom: 4rem;
+  }
+
+  #hyllText {
+    // font-size: 0.65rem;
+    bottom: 4rem;
+  }
+  .header {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  #scroller a {
+    font-size: 0.8rem;
+  }
+
+  #om-oss i {
+    font-size: 12rem;
+  }
+
+  #errorContent img {
+    height: 220px;
+    width: 280px;
+  }
+}
+@media (max-width: 300px) {
+  #scroller a {
+    font-size: 0.65rem;
   }
 }
