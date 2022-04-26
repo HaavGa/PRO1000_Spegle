@@ -195,8 +195,7 @@ footer i:hover {
 }
 
 #img-slider {
-  height: 32rem;
-  width: 70rem;
+  width: 70%;
 }
 
 #icon-grid {
@@ -344,11 +343,6 @@ footer i:hover {
     margin-bottom: 1rem;
   }
 
-  #img-slider {
-    height: 20rem;
-    width: 60rem;
-  }
-
   .adresse img {
     display: none;
   }
@@ -416,11 +410,6 @@ footer i:hover {
     max-width: 30rem;
   }
 
-  #img-slider {
-    height: 15rem;
-    width: 60rem;
-  }
-
   #hyllTitle {
     font-size: 2.3rem;
   }
@@ -449,14 +438,13 @@ footer i:hover {
     width: 2.5rem;
     font-size: 1rem;
   }
+
+  #img-slider {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
-  #img-slider {
-    height: 10rem;
-    width: 30rem;
-  }
-
   #map-container-google-1 {
     width: 30rem;
     height: 30rem;
