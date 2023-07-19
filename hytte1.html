@@ -24,6 +24,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -40,15 +65,17 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/rome.js" defer></script>
-    <script src="js/jquery.js"></script>
-    <title>Spegle</title>
+    <script src="js/jquery.js" defer></script>
+    <script src="js/hytte1.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Spegle | Aasmunds tretopphytte</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#scroller" data-offset="0">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md py-3 bg-white navbar-light">
       <div class="container">
         <a href="/index.html" class="navbar-brand">
-          <img src="/img/newlogo.png" alt="Spegle Logo" /><span class="ps-3"
+          <img src="/img/newlogo.png" alt="Spegle Logo" /><span class="ms-2"
             >Spegle</span
           >
         </a>
@@ -65,42 +92,34 @@
         <div class="collapse navbar-collapse nav-pills" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/index.html" class="nav-link" id="navHome">Hjem</a>
+              <a href="/index.html" class="nav-link link" id="navHome">Hjem</a>
             </li>
-            <li class="dropdown">
+            <li class="nav-item">
               <a
-                class="nav-link dropdown-toggle active text-white"
-                href="#"
-                role="button"
-                id="navDestinations"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                href="/hyllandsfoss.html"
+                class="nav-link link active text-white bg-secondary"
+                >Hyllandsfoss</a
               >
-                Destinasjoner
-              </a>
-
-              <div class="dropdown-menu" aria-labelledby="navDestinations">
-                <a
-                  class="dropdown-item"
-                  href="/destinasjoner.html"
-                  id="navAllDestinations"
-                  >Alle destinasjoner</a
-                >
-                <a class="dropdown-item text-white active" href="/oftevatn.html"
-                  >Oftevatn</a
-                >
-                <a class="dropdown-item" href="#">Destinasjon 2</a>
-                <a class="dropdown-item" href="#">Destinasjon 3</a>
-                <a class="dropdown-item" href="#">Destinasjon 4</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a href="/om-oss.html" class="nav-link" id="navAbout">Om oss</a>
+              <a href="/om-oss.html" class="nav-link link" id="navAbout"
+                >Om oss</a
+              >
             </li>
             <li class="nav-item">
-              <a href="/kontakt-oss.html" class="nav-link me-3" id="navContact"
+              <a
+                href="/kontakt-oss.html"
+                class="nav-link link me-3"
+                id="navContact"
                 >Kontakt oss</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="/hyllandsfoss.html"
+                class="nav-link link active text-white me-3 btn-lg"
+                id="navBook"
+                >Book nå</a
               >
             </li>
             <li class="nav-item dropdown">
@@ -112,11 +131,16 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i class="bi bi-translate"></i>
-                Language
+                <img
+                  class="flag-dropdown me-1"
+                  src="/img/flags/no.png"
+                  alt="Norwegian flag"
+                />
+                Norsk
               </a>
               <ul
                 class="dropdown-menu dropdown-menu-white"
+                id="language-dropdown"
                 aria-labelledby="language-toggle"
               >
                 <li class="d-flex align-items-center">
@@ -156,15 +180,15 @@
     <main>
       <h2 class="text-center my-3">
         <a
-          href="/oftevatn.html#hytter"
-          class="text-decoration-none"
+          href="/hyllandsfoss.html"
+          class="text-decoration-none link"
           id="oftevatn-title"
-          >Oftevatn</a
+          >Hyllandsfoss</a
         >
-        | Hytte 1
+        | Aasmunds tretopphytte
       </h2>
       <!-- Image slider -->
-      <section id="img-slider" class="container mb-5">
+      <section id="img-slider" class="container">
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -212,8 +236,10 @@
                 alt="..."
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Hytte 1</h5>
-                <p>Bla bla bla bla bla bla bla bla bla bla</p>
+                <h5>Aasmunds tretopphytte</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -290,22 +316,22 @@
         </div>
       </section>
       <section>
-        <div class="container px-4 pt-5" id="icon-grid">
-          <h2 class="text-center mb-5">Fasiliteter</h2>
+        <div class="container px-4" id="icon-grid">
+          <h2 class="text-center mb-5 pt-5" id="facilities1">Fasiliteter</h2>
           <div
-            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-4"
             id="fasiliteter"
           >
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-bed h3 me-3"></i>
               <div>
-                <h4 class="mb-0">2 soverom</h4>
+                <h4 class="mb-0" id="beds1">2 soverom</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-shower h3 me-3"></i>
               <div>
-                <h4 class="mb-0">1 bad</h4>
+                <h4 class="mb-0" id="bathroom1">1 bad</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -317,7 +343,7 @@
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-users h3 me-3"></i>
               <div>
-                <h4 class="mb-0">Maks 4 gjester</h4>
+                <h4 class="mb-0" id="guests1">Maks 4 gjester</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -326,7 +352,7 @@
                 <i class="fa-solid fa-dog h4 me-4"></i>
               </div>
               <div>
-                <h4 class="mb-0">Dyr ikke tillatt</h4>
+                <h4 class="mb-0" id="pets1">Dyr ikke tillatt</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -338,7 +364,7 @@
             <div class="col d-flex align-items-start">
               <i class="fa-solid fa-plug h3 me-3"></i>
               <div>
-                <h4 class="mb-0">Strøm tilgjengelig</h4>
+                <h4 class="mb-0" id="electricity1">Strøm tilgjengelig</h4>
               </div>
             </div>
             <div class="col d-flex align-items-start">
@@ -347,68 +373,91 @@
                 <i class="fa-solid fa-smoking h4 me-3"></i>
               </div>
               <div>
-                <h4 class="mb-0">Røyking forbudt</h4>
+                <h4 class="mb-0" id="smoking1">Røyking forbudt</h4>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="container" id="book-calender">
-        <h2 class="text-center pt-5">Book ditt opphold</h2>
+        <h2 class="text-center pt-5" id="book1">Book ditt opphold</h2>
         <div class="container text-left">
           <div class="row justify-content-center">
-            <div class="col-lg-10 mt-5">
+            <div class="col-lg-10 mt-5 d-flex flex-column align-items-center">
               <form action="#" class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="input_from">Fra</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="input_from"
-                      placeholder="Startdato"
-                    />
+                    <label for="input_from" id="from1">Fra</label>
+                    <input type="text" class="form-control" id="input_from" />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="input_from">Til</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="input_to"
-                      placeholder="Sluttdato"
-                    />
+                    <label for="input_from" id="to1">Til</label>
+                    <input type="text" class="form-control" id="input_to" />
                   </div>
                 </div>
               </form>
-              <a href="#" class="btn btn-primary text-white mt-3"> Book nå</a>
+              <a href="#" class="btn btn-primary text-white mt-3" id="bookBtn1">
+                Book nå</a
+              >
             </div>
           </div>
         </div>
       </section>
-      <section class="text-center">
-        <h2>Beskrivelse</h2>
-        <p>Hytta er helt fantastisk</p>
+      <section class="d-flex flex-column align-items-center">
+        <h2 class="py-4" id="descHeader1">Beskrivelse</h2>
+        <p class="text-center mb-5" id="desc1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos aut
+          libero porro praesentium totam fugit eius rem adipisci, quia eligendi
+          accusamus voluptatibus consequatur vitae accusantium sit repellendus
+          nostrum tempora ex, impedit amet illum expedita. Placeat molestiae
+          minima iste et voluptatum fugit eum blanditiis quasi recusandae
+          nostrum eius adipisci laboriosam, exercitationem voluptate illum nobis
+          dicta accusantium earum. Repudiandae, dolores rerum voluptates, sit
+          quos quo provident, exercitationem inventore possimus omnis numquam
+          quibusdam laudantium similique excepturi repellendus deserunt nisi
+          veniam. Mollitia nobis culpa autem recusandae ea eligendi quis hic
+          rerum soluta beatae dicta quisquam dolorem repudiandae aspernatur
+          fugit ex, impedit iste inventore fugiat officia ullam nihil
+          voluptatibus? Doloremque, harum eos! Nulla, eaque vero! Accusantium
+          neque, laboriosam ullam adipisci sunt fuga! Minima nesciunt a eligendi
+          cupiditate quod? Cupiditate cum harum magni porro optio placeat
+          dolorum, repudiandae sint error odit omnis animi unde eum in laborum
+          aut quidem odio? Modi repellat nostrum quidem velit reprehenderit
+          necessitatibus provident quis fugit impedit voluptatibus enim ipsa
+          cumque ducimus officiis excepturi quibusdam, perferendis explicabo
+          laborum dolorem quo illum magni, doloremque voluptatum. Porro,
+          accusantium neque. Reprehenderit quidem officiis iste aliquam odio
+          beatae tempore quod nesciunt in esse? Assumenda, ad totam obcaecati
+          earum nobis consectetur eos sit eum nesciunt repudiandae.
+        </p>
       </section>
       <section>
         <h2 id="veibeskrivelse" class="text-center mb-5 fw-bold">
-          <br /><br /><br />
+          <br />
           Veibeskrivelse
         </h2>
         <div class="container">
           <div
             class="d-flex justify-content-center row row-cols-1 row-cols-lg-4 row-cols-xl-4"
           >
-            <div class="col adresse">
-              <h3 class="fw-bold mb-3">Adresse</h3>
-              <p>Oftevatn<br />Høydalsmo</p>
+            <div class="d-flex flex-column adresse">
+              <div class="col lead">
+                Vinjevegen 1 <br />
+                3890 Vinje, Norway
+              </div>
+              <img src="/img/undraw_road_sign_re_3kc3.svg" alt="road sign" />
             </div>
             <div id="map-container-google-1" class="map-container col mb-5">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16203.917269138019!2d8.179966580544484!3d59.49160296654345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638b6a82c13cfe9%3A0xc2503d466b537ae8!2sOftevatn!5e0!3m2!1sno!2sno!4v1645742586644!5m2!1sno!2sno"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.0404753126545!2d7.999999616542663!3d59.582388265751646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638cb3bcc830f67%3A0x280cfd5ce3dc0fa8!2sHyllandsfoss%20Camping!5e0!3m2!1sno!2sse!4v1650405887292!5m2!1sno!2sse"
+                width="600"
+                height="450"
+                style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
@@ -420,14 +469,9 @@
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
       >
         <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-          >
-          </a>
           <span class="text-muted">&copy; 2022 Spegle</span>
         </div>
-        <ul class="nav col-md-4 justify-content-start list-unstyled d-flex">
+        <ul class="nav col-md-4 list-unstyled d-flex justify-content-start">
           <li>
             <a class="text-dark me-5" href="https://instagram.com/"
               ><i class="bi bi-instagram h3"></i
@@ -439,7 +483,9 @@
             ></a>
           </li>
         </ul>
-        <a href="#" class="p5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        <li class="list-unstyled">
+          <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+        </li>
       </footer>
     </div>
   </body>
