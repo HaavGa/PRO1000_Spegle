@@ -60,5 +60,5 @@ if (window.location.hash == "#en") {
     all[i].href += "#en";
   }
   languageToggle.innerHTML =
-    '<img class="flag-dropdown me-1"src="/img/flags/en.png"/>English';
+    '<img class="flag-dropdown me-1"src="img/flags/en.png"/>English';
 }
